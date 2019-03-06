@@ -1,0 +1,125 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="1206302579" file="/Users/xywei/Dropbox/office/image_processing/chan-vesse-MBO/ThreshSeg/ThreshSegGUI.prj" location="/Users/xywei/Dropbox/office/image_processing/chan-vesse-MBO/ThreshSeg" name="ThreshSegGUI" preferred-package-location="/Users/xywei/Desktop/ThreshSegGUI/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="MATLAB Compiler for Standalone Applications">
+    <param.appname>ThreshSegGUI</param.appname>
+    <param.icon>${PROJECT_ROOT}/ThreshSegGUI_resources/icon.icns</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}/ThreshSegGUI_resources/icon_48.png</file>
+      <file>${PROJECT_ROOT}/ThreshSegGUI_resources/icon_32.png</file>
+      <file>${PROJECT_ROOT}/ThreshSegGUI_resources/icon_24.png</file>
+      <file>${PROJECT_ROOT}/ThreshSegGUI_resources/icon_16.png</file>
+    </param.icons>
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Jacob Xiaoyu Wei</param.authnamewatermark>
+    <param.email>wxy0516@gmail.com</param.email>
+    <param.company>Department of Mathematics, HKUST</param.company>
+    <param.summary>The graphical interface of ThreshSeg.</param.summary>
+    <param.description>For the algorithm used, refer to: Dong Wang, Haohan Li, Xiaoyu Wei, and Xiao-Ping Wang. An Efficient Threshold Dynamics Method for Image Segmentation. 2016.</param.description>
+    <param.screenshot>${PROJECT_ROOT}/resources/startup.jpg</param.screenshot>
+    <param.guid />
+    <param.installpath.string>/ThreshSegGUI/</param.installpath.string>
+    <param.installpath.combo>option.installpath.systemwideapp</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.intermediate>/Users/xywei/Desktop/ThreshSegGUI/for_testing</param.intermediate>
+    <param.files.only>/Users/xywei/Desktop/ThreshSegGUI/for_redistribution_files_only</param.files.only>
+    <param.output>/Users/xywei/Desktop/ThreshSegGUI/for_redistribution</param.output>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.server.ctf>/Users/xywei/Desktop/ThreshSegGUI/for_testing/.ctf</param.server.ctf>
+    <param.server.readme>/Users/xywei/Desktop/ThreshSegGUI/for_testing/readme.txt</param.server.readme>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.required.mcr.products>
+      <item>35000</item>
+      <item>35001</item>
+    </param.required.mcr.products>
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>true</param.create.log>
+    <param.log.file>.ThreshSeg.log</param.log.file>
+    <unset>
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.guid />
+      <param.installpath.combo />
+      <param.logo />
+      <param.install.notes />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.server.ctf />
+      <param.server.readme />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/ThreshSeg.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/ThreshSeg.fig</file>
+      <file>${PROJECT_ROOT}/lib/Normalize.m</file>
+      <file>${PROJECT_ROOT}/lib/apply_heat_convolution.m</file>
+      <file>${PROJECT_ROOT}/lib/compute_data_term.m</file>
+      <file>${PROJECT_ROOT}/lib/compute_energy.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/xywei/Desktop/ThreshSegGUI/for_testing" name="splash.png" optional="false">/Users/xywei/Desktop/ThreshSegGUI/for_testing/splash.png</file>
+      <file location="/Users/xywei/Desktop/ThreshSegGUI/for_testing" name="ThreshSegGUI.app" optional="false">/Users/xywei/Desktop/ThreshSegGUI/for_testing/ThreshSegGUI.app</file>
+      <file location="/Users/xywei/Desktop/ThreshSegGUI/for_testing" name="run_ThreshSegGUI.sh" optional="false">/Users/xywei/Desktop/ThreshSegGUI/for_testing/run_ThreshSegGUI.sh</file>
+      <file location="/Users/xywei/Desktop/ThreshSegGUI/for_testing" name="readme.txt" optional="true">/Users/xywei/Desktop/ThreshSegGUI/for_testing/readme.txt</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2014b.app</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.11.5</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
